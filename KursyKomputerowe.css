@@ -1,9 +1,12 @@
 :root {
   --head: #383234;
+  --head2: rgb(17, 13, 14) 4;
   --banner: #eff0e9;
+  --banner2: #eff0e9;
+  --color: #383234;
 }
-body{
-    background-color: var(--banner);
+body {
+  background-color: var(--banner);
 }
 
 * {
@@ -12,7 +15,7 @@ body{
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 .head {
@@ -30,12 +33,12 @@ img {
   border-radius: 25px;
   background-color: var(--banner);
   padding: 7px;
-  color: var(--head);
+  color: var(--color);
 }
 
 .head a:hover {
-  background-color: var(--head);
-  color: var(--banner);
+  background-color: var(--head2);
+  color: var(--banner2);
   border: 2px solid white;
 }
 
@@ -67,8 +70,32 @@ img {
 }
 
 table {
-  border: 2px dotted #383234;
+  border: 2px dotted var(--color);
   text-align: center;
   margin-left: 40px;
   width: 60%;
+  color: var(--color);
+}
+h2 {
+  color: var(--color);
+}
+#dark-mode {
+  border: 2px solid #383234;
+  border-radius: 25px;
+  background-color: var(--banner);
+  padding: 3px;
+  color: var(--head);
+  cursor: pointer;
+}
+
+li,
+a {
+  color: var(--color);
+}
+
+.darkMode {
+  --a: #eff0e9;
+  --banner: #50474a;
+  --color: #eff0e9;
+  --head: #1d1517;
 }
